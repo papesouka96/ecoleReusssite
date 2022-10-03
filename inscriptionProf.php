@@ -18,14 +18,14 @@ error_reporting(E_ALL);
 		if($pass!=$repass) $message.="<li>Mots de passe non identiques!</li>";	
 		if(empty($message)){
 			include("connexion.php");
-			$req=$pdo->prepare("select id from users where login=? limit 1");
+			$req=$pdo->prepare("select id from enseignant where login=? limit 1");
 			$req->setFetchMode(PDO::FETCH_ASSOC);
 			$req->execute(array($login));
 			$tab=$req->fetchAll();
 			if(count($tab)>0)
 				$message="<li>Login existe déjà!</li>";
 			else{
-				$ins=$pdo->prepare("insert into users(date,nom,prenom,login,pass,daten) values(now(),?,?,?,?,?)");
+				$ins=$pdo->prepare("insert into enseignant(date,nom,prenom,login,pass,daten) values(now(),?,?,?,?,?)");
 				$ins->execute(array($nom,$prenom,$login,$pass,$daten));
 				header("location:login.php");
 			}
