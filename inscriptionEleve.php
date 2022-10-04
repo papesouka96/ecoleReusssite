@@ -37,18 +37,130 @@ error_reporting(E_ALL);
 <!DOCYTPE html>
 <html>
 	<head>
-		<link rel="stylesheet" type="text/css" href="css/style.css" />
+		<!--link rel="stylesheet" type="text/css" href="css/style.css" /-->
+		<!--Bosstrap css-->
+		<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+        <!--css-->
+		<link rel="stylesheet" href="css/style.css">
+		<!--boostrap bundle-->
+		<script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct" crossorigin="anonymous"></script>
 	</head>
 	<body>
-		<header>
+		<!--header>
 			Inscription
 			<a href="login.php">Déja inscrit</a>
-		</header>
-		<form name="fo" method="post" action="" enctype="multipart/form-data">
-			<div class="label">Nom</div>
-			<input type="text" name="nom" value="<?php echo $nom?>" />
+		</header-->
+		
+    <div class="container py-4 h-100">
+        <div class="myCard row d-flex justify-content-center align-items-center h-100">
+            <div class="row g-0">
+                <div class="col-md-6 col-lg-6 d-flex align-items-center">
+                    <div class="myLeftCtn card-body p-4 p-lg-5 text-black"> 
+                        <form class="myForm text-center" name="fo" method="post" action="" >
+                            <header>
+								<img src="ecole.png" alt="" width="99px">
+							</header>
+							
+                            <div class=" form-group">
+                                <input class=" form-control form-control-lg" type="text" placeholder="Nom" id="username" required> 
+								
+                            </div>
+							<div class="form-group ">
+                              
+						
+                                <input class=" form-control form-control-lg" type="text" placeholder="Prenom" id="username" required> 
+                            </div>
+							<div class="form-group ">
+                                
+                                <input class=" form-control form-control-lg" type="text" placeholder="Date-naissance" id="username" required> 
+                            </div>
+							<div class=" form-group">
+                                <input class="form-control form-control-lg" type="text" placeholder="Lieu-naissance" id="username" required> 
+								
+                            </div>
+
+                            <select class="custom-select custom-select-lg mb-3"style="color: gray;">
+                              <option selected>Cycle</option>
+                              <option value="1">Primaire</option>
+                              <option value="2">Secondaire</option>
+                            
+                           </select>
+
+
+
+
+							<!--input class=" form-control form-control-lg" type="password" id="Cycle" placeholder="cycle" required--> 
+    
+							<select class="custom-select  custom-select-lg mb-3"style="color: gray;">
+                              <option selected>Classe</option>
+							  <option value="2">C2</option>
+                              <option value="2">C2</option>
+                              <option value="3">CM1</option>
+							  <option value="3">CM1</option>
+							  <option value="3">CM1</option>
+							  <option value="3">CM1</option>
+							  <option value="3">CM1</option>
+							  <option value="3">CM1</option>
+							  <option value="3">CM1</option>
+							  <option value="3">CM1</option>
+							  <option value="3">CM1</option>
+							  <option value="3">CM1</option>
+							  <option value="3">CM1</option>
+							  <option value="3">CM1</option>
+							  <option value="3">CM1</option>
+							  <option value="3">CM1</option>
+							  <option value="3">CM1</option>
+                           </select>
+
+
+
+							<div class="form-group ">
+							
+							<input class=" form-control form-control-lg" type="4" id="password" placeholder="Password" required> 
+						   </div>
+
+						   <div class="form-group ">
+							
+							<input class=" form-control form-control-lg" type="password" id="password" placeholder="Confirmer mot de passe" required> 
+						   </div>
+						  
+
+                            <div class="form-group ">
+                                <label>
+                                    <input id="check_1" name="check_1"  type="checkbox" required><small> I read and agree to Terms & Conditions</small></input> 
+                                    <div class="invalid-feedback">You must check the box.</div>
+                                </label>
+                            </div>
+
+
+                            <input type="submit" class="butt"  name="valider"value="S'inscrire'">
+							
+		
+                        </form>
+                    </div>
+                </div> 
+                <div class="col-md-6">
+                    <div class="myRightCtn">
+                            <div class="box"><header>Hello World!</header>
+                            
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
+                                sed do eiusmod tempor incididunt ut labore et dolore magna 
+                                aliqua. Ut enim ad minim veniam.</p>
+                                <input type="button" class="butt_out" value="Learn More"/>
+                            </div>
+                                
+                    </div>
+                </div>
+            </div>
+        </div>
+</div>
+			<!--div class="label">Nom</div-->
+			<!--input type="text" name="nom" value="<?php echo $nom?>" />
 			<div class="label">Prénom</div>
 			<input type="text" name="prenom" value="<?php echo $prenom?>" />
+			<div class="label">Login</div>
+			<input type="text" name="login" value="<?php echo $login?>" />
 			<div class="label">Date de naissance</div>
 			<input type="date" name="daten" value="<?php echo $daten?>" />
 			<div class="label">lieu de naissance</div>
@@ -56,11 +168,10 @@ error_reporting(E_ALL);
 			<div class="label">classe</div>
 			<input type="text" name="classe" />
 			<div class="label">cycle</div>
-			<input type="text" name="cycle" />
-			<div class="label">Login</div>
-			<input type="text" name="login" value="<?php echo $login?>" />
-			<input type="submit" name="valider" value="S'inscrire" />
-		</form>
+			<input type="text" name="cycle" /-->
+			
+		
+		
 		<?php if(!empty($message)){ ?>
 		<div id="message"><?php echo $message ?></div>
 		<?php } ?>
