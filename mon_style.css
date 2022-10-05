@@ -1,0 +1,55 @@
+body{
+    /*  background-color:#504741; */
+    margin: 0;
+    padding: O;
+    box-sizing: border-box;
+    
+    
+    
+ }
+ .navbar-nav .nav-link{
+      
+     color:#1E434Eff !important;
+      font-size: 25px;
+     margin: 5px; 
+     font-family:'Times New Roman', Times, serif;
+     font-weight: bold;
+ }
+ img.logo{
+     height: 160px !important;
+ }
+ .connecte{
+    background-color:antiquewhite;
+    opacity: 0.7;
+    
+}
+.inscrire{
+    background-color:antiquewhite;
+    opacity: 0.7;
+}
+.sec2 .carousel img{
+   
+    height: 700px !important;
+}
+.sec3 .card{
+    background-color:#1E434Eff !important;
+    font-weight: bold;
+    color:d ;
+    height: 250px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 20px;
+  }
+  .sec4 .card{
+    height: 340px;
+    background-color:antiquewhite;
+   /*  background-color:#1E434Eff; */
+   /*  opacity: 0.8; */
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 20px;
+  
+  }
+  .card-link .btn{
+    background-color:darkcyan !important;
+   
+  }
+ 
