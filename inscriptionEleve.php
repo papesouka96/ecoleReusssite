@@ -142,7 +142,7 @@ error_reporting(E_ALL);
                 </div> 
                 <div class="col-md-6">
                     <div class="myRightCtn">
-                            <div class="box"><header>Hello World!</header>
+                            <div class="box"><header></header>
                             
                             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
                                 sed do eiusmod tempor incididunt ut labore et dolore magna 

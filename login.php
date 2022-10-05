@@ -82,6 +82,7 @@
 
 
                             <input type="submit" class="butt"  name="valider"value="Se Connecter">
+							<a href="inscriptionEleve.php">S'inscrire</a>
 							
 		
                         </form>
