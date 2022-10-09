@@ -14,7 +14,7 @@
 			$message="<li>Mauvais login ou mot de passe!</li>";
 		else{
 			$_SESSION["autoriser"]="oui";
-			$_SESSION["nomPrenom"]=strtoupper($tab[0]["nom"]." ".$tab[0]["prenom"]);
+			$_SESSION["nom"]=$_POST["nom"];
 			header("location:session.php");
 		}
 	}
